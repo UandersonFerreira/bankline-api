@@ -16,6 +16,16 @@ public class Movimentacao {
     private Double valor;
     @Enumerated(EnumType.STRING)//salvo o proprio valor literal/real(Receita ou Despesa)
     private MovimentacaoTipo tipoMovimentacao;
+    @Column(name = "id_conta")
+    private  Integer idConta;
+
+    public Integer getIdConta() {
+        return idConta;
+    }
+
+    public void setIdConta(Integer idConta) {
+        this.idConta = idConta;
+    }
 
     public Integer getId() {
         return id;
